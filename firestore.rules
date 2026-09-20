@@ -1,0 +1,22 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /requests/{requestId} {
+      allow create: if true;
+      allow read, update, delete: if true;
+    }
+    match /rooms/{roomId} {
+      allow read, write: if true;
+    }
+    match /inventory/{itemId} {
+      allow read, write: if true;
+    }
+    match /borrowed_items/{borrowId} {
+      allow read, write: if true;
+    }
+    match /settings/{settingId} {
+      allow read, write: if true;
+    }
+  }
+}

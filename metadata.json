@@ -1,0 +1,6 @@
+{
+  "name": "Sakura Inn and Suites",
+  "description": "Guest room service request portal for Sakura Inn and Suites.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
